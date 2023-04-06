@@ -6,6 +6,24 @@
     padding: 0;
 }
 
+.outline-button {
+  font-family: lato, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.white {
+  border: 1px solid white;
+  color: white;
+}
+
+.lilac {
+  border: 1px solid #8980c2;
+  color: #8980c2
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -39,7 +57,8 @@ nav a {
 #hero {
   display: flex;
   flex-direction: column;
-  background-color: purple;
+  background: #8980c2 url(images/zebra-hero.jpg) center no-repeat;
+  background-size: cover;
   align-items: center;
   padding: 2rem 0;
 }
@@ -48,9 +67,79 @@ nav a {
   color: white;
 }
 
-#hero a {
-  text-decoration: none;
+#hero h1 {
+  font-family: "Bree serif", "times new Roman", serif;
+  font-weight: normal;
+  margin: 1rem 0;
 }
+
+
 #hero img {
-  width: 50%;
+  width: 66%;
+  border-radius: 50%;
+
+}
+
+main {
+  font-family: "Bree serif", "times new Roman", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  margin: 1rem 0 0;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+main article img {
+  width: 75%;
+  border: 3px solid #8980c2;
+  border-radius: 50%;
+}
+main article h3 {
+  margin: 1rem 0;
+  font-weight: normal;
+  font-size: 1,5rem;
+  color: #8980c2;
+}
+
+main article p {
+  font-size: 1.1rem;
+}
+main article a {
+  color: #8980c2;
+}
+
+/* Social footer component */
+
+#social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #8980c2;
+  padding: 1rem 0;
+}
+
+#social-links p {
+  font-family: 'Bree Serif', serif;
+  margin: 0 0 1rem;
+  color: white;
+}
+
+#social-links div div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer component */
+
+footer p {
+  text-align: center;
+  padding: 1rem;
 }
