@@ -11,3 +11,46 @@ body {
     flex-direction: column;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1.5rem;
+}
+
+#brand {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav a {
+  font-family: lato, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #7f807f;
+}
+/* Hero component */
+#hero {
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#hero h1, #hero a {
+  color: white;
+}
+
+#hero a {
+  text-decoration: none;
+}
+#hero img {
+  width: 50%;
+}
