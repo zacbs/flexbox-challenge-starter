@@ -6,29 +6,29 @@
     padding: 0;
 }
 
-.outline-button {
-  font-family: lato, Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid white;
-  text-decoration: none;
-}
-
-.white {
-  border: 1px solid white;
-  color: white;
-}
-
-.lilac {
-  border: 1px solid #8980c2;
-  color: #8980c2
-}
-
 body {
     display: flex;
     flex-direction: column;
 }
 
+.outline-button {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+}
+
+.white {
+    border: 1px solid white;
+    color: white;
+}
+
+.lilac {
+    border: 1px solid #8980c2;
+    color: #8980c2;
+}
+
+/* Header component */
 header {
     display: flex;
     flex-direction: column;
@@ -42,104 +42,109 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 nav a {
-  font-family: lato, Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: #7f807f;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #888;
 }
+
 /* Hero component */
 #hero {
-  display: flex;
-  flex-direction: column;
-  background: #8980c2 url(images/zebra-hero.jpg) center no-repeat;
-  background-size: cover;
-  align-items: center;
-  padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8980c2 url(images/zebra-hero.jpg) 33% no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
 }
 
 #hero h1, #hero a {
-  color: white;
+    color: white;
 }
 
 #hero h1 {
-  font-family: "Bree serif", "times new Roman", serif;
-  font-weight: normal;
-  margin: 1rem 0;
+    font-family: 'Bree Serif', 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 1rem 0;
 }
-
 
 #hero img {
-  width: 66%;
-  border-radius: 50%;
-
+    width: 66%;
+    border-radius: 50%;
 }
 
+/* Main content component */
 main {
-  font-family: "Bree serif", "times new Roman", serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bree Serif', 'Times New Roman', Times, serif;
 }
 
 main h2 {
-  margin: 1rem 0 0;
+    margin: 1rem 0 0;
 }
 
 main article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
 }
+
 main article img {
-  width: 75%;
-  border: 3px solid #8980c2;
-  border-radius: 50%;
+    width: 75%;
+    border-radius: 50%;
+    border: 4px solid #8980c2;
 }
+
 main article h3 {
-  margin: 1rem 0;
-  font-weight: normal;
-  font-size: 1,5rem;
-  color: #8980c2;
+    margin: 1rem 0;
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 main article p {
-  font-size: 1.1rem;
-}
-main article a {
-  color: #8980c2;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Social footer component */
-
+/* Social links component */
 #social-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #8980c2;
-  padding: 1rem 0;
+    background: #8980c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 #social-links p {
-  font-family: 'Bree Serif', serif;
-  margin: 0 0 1rem;
-  color: white;
+    font-family: 'Bree Serif', 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
-#social-links div div {
-  display: flex;
-  justify-content: space-between;
+#social-links > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* footer component */
+/* Footer component */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
 
 footer p {
-  text-align: center;
-  padding: 1rem;
+    font-family: 'Bree Serif', 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
 }
